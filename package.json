@@ -2,9 +2,12 @@
   "name": "git-auth",
   "version": "0.0.0",
   "description": "A CLI tool thats manege your git tokens, users and passwords.",
-  "main": "index.js",
+  "main": "./bin/git-auth.js",
+  "bin": {
+    "git-auth": "./bin/git-auth.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/jest"
   },
   "repository": {
     "type": "git",
@@ -26,10 +29,22 @@
   "homepage": "https://github.com/kaic/git-auth#readme",
   "devDependencies": {
     "eslint": "^6.4.0",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-config-prettier-standard": "^3.0.1",
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1"
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^24.9.0",
+    "prettier": "1.18.2",
+    "prettier-config-standard": "^1.0.1"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "commander": "^3.0.2",
+    "enquirer": "^2.3.2",
+    "nodegit": "^0.26.2"
   }
 }
