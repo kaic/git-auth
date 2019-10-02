@@ -11,10 +11,9 @@ program
   .action(commands.init)
 
 program
-  .command('auth')
-  .description('git-auth authentication')
-  .option('-l, --list', 'List all authentications')
-  .action(commands.init)
+  .command('list')
+  .description('list all git-auth authentications')
+  .action(commands.list)
 
 program
   .command('clone')
