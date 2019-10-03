@@ -20,4 +20,9 @@ program
   .description('clone with auth enabled')
   .action(commands.init)
 
+program
+  .command('set-password')
+  .description('set git-auth password')
+  .action(commands.password.setPassword)
+
 program.parse(process.argv)
